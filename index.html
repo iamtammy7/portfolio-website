@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Olga Tamari Nhende | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional home page specific styles */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Avatar Image Style */
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .highlight {
+            color: #ffd700;
+        }
+
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin: 1rem 0;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .hero .intro {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .btn-hero {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-hero:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .featured-projects {
+            margin-top: 3rem;
+        }
+
+        .featured-projects h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .mini-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .mini-project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+
+        .mini-project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(231,76,60,0.2);
+        }
+
+        .mini-project-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .mini-project-info {
+            padding: 1rem;
+        }
+
+        .mini-project-info h4 {
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+        }
+
+        .mini-project-info p {
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .view-all a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero .tagline {
+                font-size: 1rem;
+            }
+            .avatar {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">OTN</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section with Avatar -->
+        <div class="hero">
+            <div class="hero-content">
+                <!-- YOUR AVATAR IMAGE -->
+                <img src="avatar.png.jpg" alt="Olga Tamari Nhende" class="avatar">
+                
+                <h1>Hi, I'm <span class="highlight">OLGA TAMARI NHENDE</span></h1>
+                <div class="tagline">An Aspiring Web Developer</div>
+                <p class="intro">I am passionate about creating responsive and user-friendly websites. I enjoy learning new technologies and building projects.</p>
+                <a href="projects.html" class="btn-hero">View My Work →</a>
+            </div>
+        </div>
+
+        <!-- Info Cards Section -->
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Creating beautiful and intuitive user interfaces with attention to detail.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🚀</div>
+                <h3>Continuous Learning</h3>
+                <p>Always exploring new technologies and improving my skills every day.</p>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Olga Tamari Nhende | Web Technology Student</p>
+    </footer>
+
+</body>
+</html>
